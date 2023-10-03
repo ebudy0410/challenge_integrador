@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar | Funkishop</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <picture>
+                <a href="../../index.html">
+                    <img src="../../sources/branding/logo_light_horizontal.svg" alt="Isologotipo de la Marca Funkoshop">
+                </a>
+            </picture>
+            <ul class="menu">
+                <li class="menu_item with-dropbox">
+                    <a class="menu_link with-icon" href="../shop/shop.html">VER TIENDA</a>
+                </li>
+                <li class="menu_item">
+                    <a class="menu_link" href="admin.html">ADMIN</a>
+                </li>
+                <li class="menu_item">
+                    <a class="menu_link" href="../../index.html">SALIR</a>
+                </li>
+            </ul>  
+        </nav>    
+    </header>
+    <main class="admin-item">
+        <section class="container">
+            <h2>EDITAR ITEM</h2>
+            <div>
+                <label for="category">Categoría:</label>
+                <select name="category" id="category">
+                    <option value="remeras">Remeras</option>
+                    <option value="funkos" selected>Funkos</option>
+                    <option value="llaveros">Llaveros</option>
+                </select>
+                <label class="spacing" for="license">Licencia:</label>
+                <select name="license" id="license">
+                    <option value="harry-potter">Harry Potter</option>
+                    <option value="pokemon">Pokemon</option>
+                    <option value="star-wars">Star Wars</option>
+                    <option value="naruto" selected>Naruto Shippuden</option>
+                </select>
+            </div>
+            <div>
+                <label for="name">Nombre del producto: </label>
+                <input type="text" name="name" id="name" value="Kakashi Hatake Shippuden Saga">
+            </div>
+            <textarea name="description" id="description" value="Descripción del producto">Figura Funko coleccionable de Kakashi Hatake de la saga Naruto Shipudden invocando chidori.</textarea>
+            <div>
+                <label for="sku">SKU: </label>
+                <input type="text" name="sku" id="sku" value="NAR001012">
+                <label class="spacing" for="price">Precio: </label>
+                <input type="number" name="price" id="price" value="1.799">
+                <label class="spacing" for="stock">Stock: </label>
+                <input type="number" name="stock" id="stock" value="10">
+            </div>
+            <div>
+                <label for="discount">Descuento: </label>
+                <input type="text" name="discount" id="discount" value="10%">
+                <label class="spacing" for="pay">Cuotas: </label>
+                <select name="pay" id="pay">
+                    <option value="three">3 Cuotas sin interés</option>
+                    <option value="six" selected>6 Cuotas sin interés</option>
+                    <option value="twelve">12 Cuotas sin interés</option>
+                </select>
+            </div>
+            <div>
+                <label for="image">Imágenes: </label>
+                <button class="images-button">Elegir archivos</button>
+                <p>No se ha seleccionado ningún archivo</p>
+            </div>
+            <div class="images-box">
+                <div class="images">
+                    <picture>
+                        <img src="../../sources/pokemon/charmander-1.webp" alt="Figura funko de Charmander de la serie Pokemon">
+                    </picture>
+                    <h3>Frente</h3>
+                </div>
+                <div class="images">
+                    <picture>
+                        <img src="../../sources/pokemon/charmander-box.webp" alt="Figura funko de Charmander de la serie Pokemon en caja">
+                    </picture>
+                    <h3>Dorso</h3>
+                </div>
+            </div>
+            <button class="modify">Modificar Producto</button>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <nav class="container">
+                <ul>
+                    <li>
+                        <a class="menu_link" href="../shop/shop.html">SHOP</a>
+                    </li>
+                    <li>
+                        <a class="menu_link" href="register.html">REGISTRARSE</a>
+                    </li>
+                    <li>
+                        <a class="menu_link" href="login.html">LOGIN</a>
+                    </li>
+                    <li>
+                        <a class="menu_link" href="contact.html">CONTACTO</a>
+                    </li>
+                </ul>
+                <picture>
+                    <img src="../../sources/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
+                </picture>
+            </nav>
+        </section>
+        <p>All rights reserved 2023 - Funkishop &copy;</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+</body>
+</html>

@@ -1,138 +1,164 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Home | Funkishop</title>
 </head>
 <body>
     <header> <!-- Inicio header -->
-        <nav>
+        <nav class="container">
             <picture>
                 <a href="./index.html">
                     <img src="./sources/branding/logo_light_horizontal.svg" alt="Isologotipo de la Marca Funkoshop">
                 </a>
             </picture>
-            <li>
-                <a href="./pages/shop.html">SHOP</a>
-            </li>
-            <li>
-                <a href="./pages/contact.html">CONTACTO</a>
-            </li>
-            <li>
-                <a href="./pages/login.html">LOGIN</a>
-            </li>
-            <li>
-                <a href="./pages/cart.html">
-                    <img src="./sources/icons/cart-icon.svg" alt="Icono de carrito">
-                </a>
-            </li>
-        </nav>        
+            <ul class="menu">
+                <li class="menu_item with-dropbox">
+                    <a class="menu_link with-icon" href="./pages/shop/shop.html">SHOP <iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
+                    <ul class="dropbox">
+                        <li class="dropbox_item">
+                            <a href="#">Funkos</a>
+                        </li>
+                        <li class="dropbox_item">
+                            <a href="#">Remeras</a>
+                        </li>
+                        <li class="dropbox_item">
+                            <a href="#">Llaveros</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu_item">
+                    <a class="menu_link" href="./pages/admin/contact.html">CONTACTO</a>
+                </li>
+                <li class="menu_item">
+                    <a class="menu_link" href="./pages/admin/login.html">LOGIN</a>
+                </li>
+                <li class="menu_item">
+                    <a class="menu_cart" href="./pages/shop/cart.html">
+                        <img src="./sources/icons/cart-icon.svg" alt="Icono de carrito">
+                    </a>
+                </li>
+            </ul>  
+        </nav>    
     </header> <!-- Fin header -->
-    <main>
-        <section>
-            <article>
+    <main class="main-home">
+        <section class="banner">
+            <article  class="container">
                 <h3>Nuevos Ingresos</h3>
                 <p>Descubrí el próximo Funko Pop de tu colección</p>
-                <a href="./pages/shop.html">SHOP</a>
+                <a href="./pages/shop/shop.html">SHOP</a>
             </article>
         </section>
-        <section>
-            <article>
-                <h3>Star Wars & The Mandalorian</h3>
-                <p>Disfrutá de una saga que sigue agregando personajes a su colección.</p>
-                <a href="./pages/shop.html">VER COLECCIÓN</a>
-            </article>
-            <picture>
-                <img src="./sources/star-wars/baby-yoda-1.webp" alt="Figura coleccionable Funko de Grogu de la serie The Mandalorian">
-            </picture>
-        </section>
-        <section>
-            <article>
-                <h3>Pokemon Indigo</h3>
-                <p>Atrapá todos los que puedas y disfrutá de una colección llena de amigos.</p>
-                <a href="./pages/shop.html">VER COLECCIÓN</a>
-            </article>
-            <picture>
-                <img src="./sources/pokemon/vulpix-1.webp" alt="Figura coleccionable Funko de Vulpix de la serie Pokemon">
-            </picture>
-        </section>
-        <section>
-            <article>
-                <h3>Harry Potter</h3>
-                <p>Revive los recuerdos de una saga llena de magia y encanto.</p>
-                <a href="./pages/shop.html">VER COLECCIÓN</a>
-            </article>
-            <picture>
-                <img src="./sources/harry-potter/snape-patronus-1.webp" alt="Figura coleccionable Funko del Patronus de Snape en la película Harry Potter">
-            </picture>
-        </section>
-        <section>
-            <h2>Últimos lanzamientos</h2>
-            <ul>
-                <li>
-                    <article>
-                        <a href="">
-                            <picture>
-                                <img src="./sources/star-wars/trooper-1.webp" alt="Figura coleccionable Funko de un stormtrooper">
-                            </picture>
-                            <div>
-                                <p>STAR WARS</p>
-                                <h3>STORMTROOPER LIGHTSABER </h3>
-                                <p>$ 1799,99.-</p>
-                                <p>3 CUOTAS SIN INTERÉS</p>
-                            </div>
-                        </a>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <a href="">
-                            <picture>
-                                <img src="./sources/pokemon/pidgeotto-1.webp" alt="Figura coleccionable Funko de Pidgeotto">
-                            </picture>
-                            <div>
-                                <p>POKEMON</p>
-                                <h3>PIDGEOTTO</h3>
-                                <p>$ 1799,99.-</p>
-                                <p>3 CUOTAS SIN INTERÉS</p>
-                            </div>
-                        </a>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <a href="">
-                            <picture>
-                                <img src="./sources/harry-potter/luna-1.webp" alt="Figura coleccionable Funko de Luna Lovegood">
-                            </picture>
-                            <div>   
-                                <p>HARRY POTTER</p>
-                                <h3>LUNA LOVEGOOD LION MASK</h3>
-                                <p>$ 1799,99.-</p>
-                                <p>3 CUOTAS SIN INTERÉS</p>
-                            </div>
-                        </a>
-                    </article>
-                </li>
-            </ul>
-        </section>
+        <div>
+            <section class="home-item container">
+                <article>
+                    <h3>Star Wars & The Mandalorian</h3>
+                    <p>Disfrutá de una saga que sigue agregando personajes a su colección.</p>
+                    <div>
+                        <a href="#">VER COLECCIÓN</a>
+                    </div>
+                </article>
+                <picture  class="right">
+                    <img src="./sources/star-wars/baby-yoda-1.webp" alt="Figura coleccionable Funko de Grogu de la serie The Mandalorian">
+                </picture>
+            </section>
+            <section class="home-item container">
+                <article >
+                    <h3>Pokemon Indigo</h3>
+                    <p>Atrapá todos los que puedas y disfrutá de una colección llena de amigos.</p>
+                    <a href="#">VER COLECCIÓN</a>
+                </article>
+                <picture>
+                    <img src="./sources/pokemon/vulpix-1.webp" alt="Figura coleccionable Funko de Vulpix de la serie Pokemon">
+                </picture>
+            </section>
+            <section class="home-item container">
+                <article>
+                    <h3>Harry Potter</h3>
+                    <p>Revive los recuerdos de una saga llena de magia y encanto.</p>
+                    <div>
+                        <a href="#">VER COLECCIÓN</a>
+                    </div>
+                </article>
+                <picture class="right">
+                    <img src="./sources/harry-potter/snape-patronus-1.webp" alt="Figura coleccionable Funko del Patronus de Snape en la película Harry Potter">
+                </picture>
+            </section>
+            <section class="slider container">
+                <h2>ÚLTIMOS LANZAMIENTOS</h2>
+                <ul>
+                    <li>
+                        <article>
+                            <a href="#">
+                                <picture>
+                                    <span>NUEVO</span>
+                                    <img class="img-front" src="./sources/star-wars/trooper-1.webp" alt="Figura coleccionable Funko de un stormtrooper">
+                                    <img class="img-back" src="./sources/star-wars/trooper-box.webp" alt="Figura coleccionable Funko de un stormtrooper en caja">
+                                </picture>
+                                <div class="article-box">
+                                    <p>STAR WARS</p>
+                                    <h3>STORMTROOPER LIGHTSABER </h3>
+                                    <p>$ 1799,99.-</p>
+                                    <p>3 CUOTAS SIN INTERÉS</p>
+                                </div>
+                            </a>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <a href="#">
+                                <picture>
+                                    <span>NUEVO</span>
+                                    <img class="img-front" src="./sources/pokemon/pidgeotto-1.webp" alt="Figura coleccionable Funko de Pidgeotto">
+                                    <img class="img-back" src="./sources/pokemon/pidgeotto-box.webp" alt="Figura coleccionable Funko de Pidgeotto en caja">
+                                </picture>
+                                <div class="article-box">
+                                    <p>POKEMON</p>
+                                    <h3>PIDGEOTTO</h3>
+                                    <p>$ 1799,99.-</p>
+                                    <p>3 CUOTAS SIN INTERÉS</p>
+                                </div>
+                            </a>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <a href="#">
+                                <picture>
+                                    <span>NUEVO</span>
+                                    <img class="img-front" src="./sources/harry-potter/luna-1.webp" alt="Figura coleccionable Funko de Luna Lovegood">
+                                    <img class="img-back" src="./sources/harry-potter/luna-box.webp" alt="Figura coleccionable Funko de Luna Lovegood en caja">
+                                </picture>
+                                <div class="article-box">   
+                                    <p>HARRY POTTER</p>
+                                    <h3>LUNA LOVEGOOD LION MASK</h3>
+                                    <p>$ 1799,99.-</p>
+                                    <p>3 CUOTAS SIN INTERÉS</p>
+                                </div>
+                            </a>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+        </div>
     </main>
     <footer>
         <section>
-            <nav>
+            <nav class="container">
                 <ul>
                     <li>
-                        <a href="./pages/shop.html">SHOP</a>
+                        <a class="menu_link" href="./pages/shop/shop.html">SHOP</a>
                     </li>
                     <li>
-                        <a href="./pages/register.html">REGISTRARSE</a>
+                        <a class="menu_link" href="./pages/admin/register.html">REGISTRARSE</a>
                     </li>
                     <li>
-                        <a href="./pages/login.html">LOGIN</a>
+                        <a class="menu_link" href="./pages/admin/login.html">LOGIN</a>
                     </li>
                     <li>
-                        <a href="./pages/contact.html">CONTACTO</a>
+                        <a class="menu_link" href="./pages/admin/contact.html">CONTACTO</a>
                     </li>
                 </ul>
                 <picture>
@@ -142,5 +168,6 @@
         </section>
         <p>All rights reserved 2023 - Funkishop &copy;</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 </body>
 </html>
